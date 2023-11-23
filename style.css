@@ -1,0 +1,172 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.grid-container{
+    display: grid;
+}
+body{
+    background-color: rgb(70, 70, 226)
+}
+h1{
+    color: white;
+    font-size: 150%;
+}
+h2{
+    color: white;
+    font-size: 200%;
+    margin-left: 250px;
+}
+h3{
+    color: white;
+    font-size: 150%;
+}
+h4{
+    color: white;
+    font-size: 150%;
+}
+h5{
+    color: white;
+    font-size: 150%;
+}
+h7{
+    color: white;
+    font-size: 150%;
+}
+p{
+    color: white;
+    font-size: 250%;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item2{
+    grid-column-start: 1;
+}
+.item3{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#euaqui{
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.grid-container1{
+    display: grid;
+    background-color: rgb(41, 41, 192)
+}
+
+.item4{
+    grid-column-start: 2;
+}
+.item5{
+    grid-column-start: 1;
+}
+.item6{
+    grid-column-start: 2;
+}
+.item7{
+    grid-column-start: 2;
+}
+.item8{
+    grid-row-start: 3;
+}
+.grid-container2{
+    display: grid;
+    background-color: rgb(27, 27, 193);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item9{
+    grid-column-start: 4;
+    grid-column-end: 2;
+}
+.item10{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+.item11{
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+.grid-container3{
+    display: grid;
+    grid-template-columns: 11fr 5fr 4fr 5fr;
+}   
+.item12{
+    grid-column-start: 4;
+    grid-column-end: 2;
+}
+.item13{
+    grid-column-start: 4;
+    grid-column-end: 1;
+}
+.grid-container4{
+    display: grid;
+    grid-template-columns: 1fr 12fr 2fr 40fr;
+    background-color: black;
+}
+.item15{
+    grid-column-start: 2;
+}
+
+.button{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #053742;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
+}
+.dark{
+    background-color: #01090c;
+}
+
+#botao{
+    float: right;
+    height: 100%;
+}
+
+#change-color-button{
+    background-color: white;
+    height: 50%;
+    border: 2px solid white;
+}
+
+#revert-color-button{
+    background-color: white;
+    height: 50%;
+    border: 2px solid white;
+}
