@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,48 +11,49 @@
 </head>
 <body id="corpo">
     <header>
+      <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">O que eu fiz também</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">O que eu fiz também</a></li>
+        <li><a href="#">Contato</a></li>
         <li style="float:right"><a class="active" href="#about">About</a></li>
-        <button id="change-color-button">Contraste</button>
-        <button id="revert-color-button">Voltar as cores antigas</button>
+        <button id="botao" onclick="mudacor()">Contraste</button>
+        <button id="botao2" onclick="fonte1()">A+</button>
+        <button id="botao3" onclick="fonte2()">A-</button>
       </ul>
       <div class="grid-container">
-        <div class="item1"><h1>Olá, Eu sou o João Pedro prazer!</h1></div>
+        <div class="item1"><h1>Olá, Eu sou o João Pedro!</h1></div>
         <div class="item3"><img src="eu.jpg" id="euaqui" alt="Minha foto com eu na pose de observação"></div>
-        <div class="item2"><p>Eu ajudo empresas e companias atingir as metas deles ao desenvolver sites</p></div>
       </div>
+    </nav>
     </header>
+    <br><br>
     <main>
       <div class="grid-container1">
-        <div class="item4"><h1>Cursos</h1></div>
+        <div class="item4"><h2>Cursos</h2></div>
         <div class="item5"><img style="width: 95%" src="tudo-sobre-a-unesp-F4.jpg" alt="Logotipo da Unesp"></div>
         <div class="item6"><p>Fiz curso na unesp em 2020 e terminei em 2021 aprendi mexer com os conheciimentos em geral da área</p></div>
-        <div class="item7"><img src="fatec-identidade.jpg" style="width: 90%" alt="Logotipo da Unesp"></div>
+        <div class="item7"><img src="fatec-identidade.jpg" style="width: 100%" alt="Logotipo da Unesp"></div>
         <div class="item8"><p>Estou fazendo a fatec e estou no segundo semestre no 1 ano da faculdade no turno da manhã</p></div>
       </div>
-
-      <br><br>
       <div class="grid-container2">
         <div class="item9">
-          <h2>Resumo Pessoal meu</h2>
+          <h3>Resumo Pessoal meu</h3>
         </div>
         <div class="item10">
           <p>Gosto de ser curioso e aprender coisas novas porém quando tenho duvida eu paro e busco uma resposta a todo custo!</p>
         </div> 
         <div class="item11">
-          <img style="width: 50%"src="depositphotos_31075487-stock-photo-thinking.jpg" alt="Foto de um boneco pensando relacionando com o que as pessoas estão pensando do meu resumo pessoal">
+          <img style="width: 60%"src="depositphotos_31075487-stock-photo-thinking.jpg" alt="Foto de um boneco pensando relacionando com o que as pessoas estão pensando do meu resumo pessoal">
         </div>
       </div>
 
-      <div class="grid-container3">
+      <div id="segundo2" class="grid-container3">
         <div class="item12">
-          <h3>Resumo acadêmico</h3>
+          <h4 style="color: black">Resumo acadêmico</h4>
         </div>
         <div class="item13">
-          <p>Tenho um tcc da unesp que é o jogo que ensina programar para crianças</p>
+          <p style="color: black">Tenho um tcc da unesp que é o jogo que ensina programar para crianças</p>
         </div>
         <div class="item14">
           <img src="" alt="">
@@ -66,15 +67,17 @@
       </div>
     </main>
     <footer>
-        <div class="grid-container4">
+        <div id="segundo3" class="grid-container4">
         <div class="item15">
-          <h4>Entre em contato comigo!</h4>
+          <h5 id="contato2" style="color: black">Entre em contato comigo!</h5>
         </div>
         <div class="item16">
-          <p>joao.santos395@fatec.sp.gov.br</p>
+          <p id="email2" style="color: black">joao.santos395@fatec.sp.gov.br</p>
         </div>
       </div> 
-      
+      <a href="" id="insta" ><img src="pngwing.com (1).png" style="width: 5%" alt="instagram"></a>
+      <a href="" id="face" ><img src="pngwing.com (2).png" style="width: 5%" alt="instagram"></a>
+      <a href="" id="whats" ><img src="pngwing.com.png" style="width: 5%" alt="instagram"></a>
     </footer>
       <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
       <script>

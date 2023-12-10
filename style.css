@@ -8,6 +8,7 @@ ul {
   
   li {
     float: left;
+    font-family: sans-serif;
   }
   
   li a {
@@ -17,115 +18,119 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-.grid-container{
-    display: grid;
-}
 body{
-    background-color: rgb(70, 70, 226)
+    background-color: rgb(20, 20, 121)
 }
 h1{
     color: white;
-    font-size: 150%;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 h2{
     color: white;
-    font-size: 200%;
-    margin-left: 250px;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 h3{
     color: white;
-    font-size: 150%;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 h4{
     color: white;
-    font-size: 150%;
+    font-size:  50px;
+    font-family: sans-serif;
 }
 h5{
     color: white;
-    font-size: 150%;
-}
-h7{
-    color: white;
-    font-size: 150%;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 p{
     color: white;
-    font-size: 250%;
-}
-.item1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-.item2{
-    grid-column-start: 1;
-}
-.item3{
-    grid-column-start: 3;
-    grid-row-start: 2;
+    font-size: 50px;
+    font-family: sans-serif;
 }
 
 #euaqui{
     width: 50%;
-    height: 30%;
-    border-radius: 50%;
+    height: 100%;
 }
 
+.item1{
+    grid-area: texto;
+}
+.item2{
+    grid-area: texto2;
+}
+.item3{
+    grid-area: rosto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "texto texto texto texto texto texto rosto"
+    ;
+}
 .grid-container1{
     display: grid;
-    background-color: rgb(41, 41, 192)
-}
-
-.item4{
-    grid-column-start: 2;
-}
-.item5{
-    grid-column-start: 1;
-}
-.item6{
-    grid-column-start: 2;
-}
-.item7{
-    grid-column-start: 2;
-}
-.item8{
-    grid-row-start: 3;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    ". cursos"
+    "unesp info"
+    "info2 fatec"
+    ;
 }
 .grid-container2{
     display: grid;
-    background-color: rgb(27, 27, 193);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "texto3 texto3"
+    "info2 boneco"
+    ;
 }
 .item9{
-    grid-column-start: 4;
-    grid-column-end: 2;
+    grid-area: texto3;
 }
 .item10{
-    grid-row-start: 2;
-    grid-column-start: 1;
+    grid-area: info2;
 }
 .item11{
-    grid-row-start: 2;
-    grid-column-start: 4;
+    grid-area: boneco;
 }
-.grid-container3{
-    display: grid;
-    grid-template-columns: 11fr 5fr 4fr 5fr;
-}   
-.item12{
-    grid-column-start: 4;
-    grid-column-end: 2;
+
+
+.item4{
+    grid-area: cursos;
 }
-.item13{
-    grid-column-start: 4;
-    grid-column-end: 1;
+.item5{
+    grid-area: unesp;
 }
-.grid-container4{
-    display: grid;
-    grid-template-columns: 1fr 12fr 2fr 40fr;
-    background-color: black;
+.item6{
+    grid-area: info;
 }
-.item15{
-    grid-column-start: 2;
+.item7{
+    grid-area: fatec;
+}
+.item8{
+    grid-area: info2
+}
+
+#botao2{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-color: blue;
+}
+#botao3{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-color: blue;
 }
 
 .button{
@@ -137,36 +142,45 @@ p{
     cursor: pointer;
     background-color: #ffffff;
 }
-.ball{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #053742;
-    transition: left 1s;
-}
-.ball-move{
-    left: calc(100% - 40px);
-}
-.dark{
-    background-color: #01090c;
-}
 
 #botao{
     float: right;
     height: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border-color: blue;
 }
 
-#change-color-button{
-    background-color: white;
-    height: 50%;
-    border: 2px solid white;
+.grid-container3{
+    background-color: rgb(255, 255, 255);
+}
+.grid-container4{
+    background-color: rgb(253, 253, 253);
 }
 
-#revert-color-button{
-    background-color: white;
-    height: 50%;
-    border: 2px solid white;
+#contato2{
+    text-decoration: none;
 }
+#email2{
+    text-decoration: none;
+}
+
+#insta{
+    text-decoration: none;
+    color: white;
+}
+
+#face{
+    text-decoration: none;
+    color: white;
+}
+
+#whats{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  }

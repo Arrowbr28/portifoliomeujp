@@ -1,21 +1,43 @@
-const changeButton = document.querySelector('#change-color-button');
-    const revertButton = document.querySelector('#revert-color-button');
-    const body = document.querySelector('body');
-    const divs = document.querySelectorAll('div');
-    let originalColors = [];
+function mudacor() {
+  var body = document.body;
+  var usa = body.style.backgroundColor;
+  if (usa === "white" || usa === '') {
+    body.style.backgroundColor = 'black';
+    var a = document.getElementById("segundo2");
+    a.style.backgroundColor = "white"
+    var b = document.getElementById("segundo3");
+    b.style.backgroundColor = "white";
+    var c = document.querySelector("h3");
+    c.style.color = "white";
+    var d = document.querySelector("p");
+    d.style.color = "white";
+  } else {
+    body.style.backgroundColor = "";
+    var a = document.getElementById("segundo2");
+    a.style.backgroundColor = ""
+    var b = document.getElementById("segundo3");
+    b.style.backgroundColor = "";
+    var c = document.querySelector("h3");
+    c.style.color = "";
+    var d = document.querySelector("p");
+    d.style.color = "";
+}
+}
 
-    changeButton.addEventListener('click', () => {
-      originalColors = [];
-      for (let i = 0; i < divs.length; i++) {
-        originalColors.push(divs[i].style.backgroundColor);
-        divs[i].style.backgroundColor = 'black';
-      }
-      body.style.backgroundColor = 'black';
-    });
+function fonte1 () {
+  document.querySelector("h1").style.fontSize = '80px';
+  document.querySelector("h2").style.fontSize = '80px';
+  document.querySelector("h3").style.fontSize = '80px';
+  document.querySelector("h4").style.fontSize = '80px';
+  document.querySelector("h5").style.fontSize = '80px';
+  document.querySelector("p").style.fontSize = '80px';
+}
+function fonte2(){
+document.querySelector("h1").style.fontSize = '';
+document.querySelector("h2").style.fontSize = '';
+document.querySelector("h3").style.fontSize = '';
+document.querySelector("h4").style.fontSize = '';
+document.querySelector("h5").style.fontSize = '';
+document.querySelector("p").style.fontSize = '';
+}
 
-    revertButton.addEventListener('click', () => {
-      for (let i = 0; i < divs.length; i++) {
-        divs[i].style.backgroundColor = originalColors[i];
-      }
-      body.style.backgroundColor = '';
-    });
