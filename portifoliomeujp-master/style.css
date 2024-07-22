@@ -1,0 +1,228 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    font-family: sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.grid-container{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30px 220px auto;
+    grid-template-areas: 
+    "itemsegundo itemprimeiro"
+    "itemsegundo itemterceiro"
+    ;
+}
+.item1{
+    grid-area: itemprimeiro;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.item2{
+    grid-area: itemsegundo;
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+}
+.item3{
+    grid-area: itemterceiro;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+    body{
+        background-image: linear-gradient(black, darkblue);
+        height: 1000px;
+      }
+
+h2{
+    color: white;
+    font-size: 200%;
+    margin-left: 250px;
+}
+h3{
+    color: white;
+    font-size: 150%;
+}
+h4{
+    color: white;
+    font-size: 150%;
+}
+h5{
+    color: white;
+    font-size: 150%;
+}
+h7{
+    color: white;
+    font-size: 150%;
+}
+p{
+    
+}
+
+@keyframes example1 {
+    from {background-image: linear-gradient(blue, purple);}
+    to {background-image: linear-gradient(black, blue);}
+  }
+
+.grid-container1{
+    display: grid;
+    background-image: linear-gradient(blue, purple);
+    grid-template-areas: 
+    ". titulodoscurso titulodoscurso"
+    "unesp textounesp textounesp"
+    "explicacaofatec explicacaofatec fatec";
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.item4{
+    grid-area: titulodoscurso;
+}
+.item5{
+    grid-area: unesp;
+}
+.item6{
+    grid-area: textounesp;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.item7{
+    grid-area: fatec;
+}
+.item8{
+    grid-area: explicacaofatec;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes example2 {
+    from {background-image: linear-gradient(blue, purple);}
+    to {background-image: linear-gradient(black, blue);}
+  }
+
+.grid-container2{
+    display: grid;
+    background-image: linear-gradient(blue, purple);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". resumomeu resumomeu"
+    "boneco resumomeuexplicacao resumomeuexplicacao";
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.item9{
+    grid-area: resumomeu;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.item10{
+    grid-area: resumomeuexplicacao;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.item11{
+    grid-area: boneco;
+}
+.grid-container3{
+    display: grid;
+    grid-template-areas: 
+    ". tituloprincipal tituloprincipal"
+    "explicacao explicacao explicacao";
+}   
+.item12{
+    grid-area: tituloprincipal;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.item13{
+    grid-area: explicacao;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.grid-container4{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 12fr 2fr 40fr;
+    background-color: black;
+}
+.item15{
+    grid-column-start: 2;
+}
+
+.button{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #053742;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
+}
+.dark{
+    background-color: #01090c;
+}
+
+#botao{
+    float: right;
+    height: 100%;
+}
+
+#change-color-button{
+    background-color: white;
+    height: 50%;
+    border: 2px solid white;
+}
+
+#revert-color-button{
+    background-color: white;
+    height: 50%;
+    border: 2px solid white;
+}
